@@ -8,8 +8,11 @@ $grey-medium: #6f7381;
 $red: #dc414f;
 $white: #ffffff;
 
-$bored-radius-sm: 2px;
-$bored-radius: 4px;
+$border-radius-sm: 2px;
+$border-radius: 4px;
+
+$border-line-sm: 1px solid $grey-lightest;
+$border-line-strong: 3px solid $grey-lightest;
 
 $box-shadow-light: 0px 2px 12px 0px #0a113d1a;
 $box-shadow-dark: 0px 4px 8px 0px #0000001a;
