@@ -28,9 +28,9 @@ button {
   height: 80px;
 }
 
-.three-dots-in-nav {
+.menu-icon {
   background-color: $grey-light;
-  border-radius: 50%;
+  border-radius: $border-radius-round;
   gap: 2.43px;
   height: 30px;
   margin-right: 15px;
@@ -38,11 +38,11 @@ button {
 }
 
 .dot {
+  background-color: $blue-dark;
+  border-radius: $border-radius-round;
   display: inline-block;
   height: 3.83px;
   width: 3.83px;
-  border-radius: 50%;
-  background-color: $blue-dark;
 }
 
 .client-data-details__title {
@@ -78,22 +78,10 @@ button {
 
 .active-navigation-item {
   font-weight: 600;
-  position: relative;
-
-  &:after {
-    background: $green;
-    border-radius: $border-radius-sm;
-    content: "";
-    display: block;
-    height: 3px;
-    position: absolute;
-    transform: translateY(12px);
-    width: 100%;
-
-    @include tablet {
-      transform: translateY(29px);
-    }
-  }
+  height: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 3px 0px $green;
 }
 
 .payment-history-table__titles-list {
@@ -121,10 +109,6 @@ button {
   padding-left: 20px;
 }
 
-.payment-history-table__item-visible-part-mobile {
-  @include fs12;
-}
-
 .arrow-right {
   padding-right: 7.57px;
 }
@@ -146,7 +130,7 @@ button {
 }
 
 .circle {
-  border-radius: 50%;
+  border-radius: $border-radius-round;
   display: inline-block;
   height: 12px;
   width: 12px;
@@ -191,6 +175,10 @@ button {
 }
 
 //Mobile
+
+.payment-history-table__item-visible-part-mobile {
+  @include fs12;
+}
 
 .payment-history-table__item-collapsible-part-mobile-transaction-data-list {
   font-size: 12px;

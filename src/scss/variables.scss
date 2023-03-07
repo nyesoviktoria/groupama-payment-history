@@ -10,6 +10,7 @@ $white: #ffffff;
 
 $border-radius-sm: 2px;
 $border-radius: 4px;
+$border-radius-round: 50%;
 
 $border-line-sm: 1px solid $grey-light;
 $border-line-strong: 3px solid $grey-light;
@@ -90,29 +91,7 @@ $box-shadow-dark: 0px 4px 8px 0px #0000001a;
   letter-spacing: 0.5px;
 }
 
-@mixin mobile {
-  @media all and (min-width: 0) {
-    @content;
-  }
-}
 
-@mixin mobile-only {
-  @media all and (max-width: 767px) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media all and (min-width: 768px) {
-    @content;
-  }
-}
-
-@mixin tablet-only {
-  @media all and (min-width: 768px) and (max-width: 1023px) {
-    @content;
-  }
-}
 
 @mixin desktop {
   @media all and (min-width: 1024px) {
@@ -120,26 +99,3 @@ $box-shadow-dark: 0px 4px 8px 0px #0000001a;
   }
 }
 
-@mixin desktop-only {
-  @media all and (min-width: 1024px) and (max-width: 1279px) {
-    @content;
-  }
-}
-
-@mixin desktop-lg {
-  @media all and (min-width: 1280px) {
-    @content;
-  }
-}
-
-@mixin desktop-lg-only {
-  @media all and (min-width: 1280px) and (max-width: 1463px) {
-    @content;
-  }
-}
-
-@mixin desktop-xl {
-  @media all and (min-width: 1464px) {
-    @content;
-  }
-}
