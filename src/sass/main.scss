@@ -47,3 +47,33 @@ button {
 .client-data-details-list dd {
   margin-bottom: 20px;
 }
+
+.navigation-items {
+  align-items: center;
+  border-bottom: 3px solid $grey-lightest;
+  box-sizing: content-box;
+  color: $blue-dark;
+  display: flex;
+  font-size: 14px;
+  gap: 30px;
+  height: 80px;
+  letter-spacing: 0.75px;
+  list-style: none;
+}
+
+.active {
+  font-weight: 600;
+  position: relative;
+}
+
+.active:after {
+  background: $green;
+  border-radius: 2px;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  position: absolute;
+  transform: translateY(32px);
+  width: 100%;
+}
