@@ -77,3 +77,59 @@ button {
   transform: translateY(32px);
   width: 100%;
 }
+
+.payment-details {
+  border-radius: $bored-radius;
+  box-shadow: $box-shadow-dark;
+  font-size: 14px;
+  padding-left: 30px;
+  overflow: hidden;
+}
+
+.circle {
+  border-radius: 50%;
+  display: inline-block;
+  height: 6px;
+  margin-right: 8px;
+  width: 6px;
+}
+
+.circle-blue {
+  background-color: $blue-light;
+}
+
+.circle-green {
+  background-color: $green;
+}
+
+.circle-red {
+  background-color: $red;
+}
+
+.payment-amount {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.payment-status {
+  letter-spacing: 0.75px;
+}
+
+.payment-history-table-titles-list {
+  color: $grey-medium;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  list-style: none;
+  margin-bottom: 16px;
+  padding-top: 30px;
+  padding-left: 19px;
+}
+
+.payment-history-table-list {
+  gap: 16px;
+  list-style: none;
+}
+
+.arrow-right {
+  transform: translateX(-10px);
+}

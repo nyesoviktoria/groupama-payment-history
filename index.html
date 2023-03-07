@@ -55,6 +55,55 @@
             <li>Eseti díj befizetése</li>
             <li class="active">Fizetési előzmények</li>
           </ul>
+          <div class="container d-flex flex-column pe-5">
+            <ul class="row payment-history-table-titles-list">
+              <li class="col-2">Azonosító</li>
+              <li class="col-2">Befizetés módja</li>
+              <li class="col-2">Dátum</li>
+              <li class="col-2">Összeg</li>
+              <li class="col-4">Státusz</li>
+            </ul>
+            <ul class="px-0 d-flex flex-column payment-history-table-list">
+              <li class="container bg-white payment-details">
+                <div
+                  class="row d-flex align-items-center"
+                  style="height: 79px; border-bottom: 1px solid #f1f2f4"
+                >
+                  <div
+                    class="col-2 d-flex align-items-center position-relative"
+                  >
+                    <button class="arrow-right position-absolute">
+                      <img
+                        src="/assets/arrow-right.svg"
+                        alt="arrow to the right"
+                      /></button
+                    ><span>EPAYMT8...</span>
+                  </div>
+                  <div class="col-2">Bankkártya</div>
+                  <div class="col-2">2019. 06. 25.</div>
+                  <div class="col-2 payment-amount">5 000 Ft</div>
+                  <div class="col-4 d-flex justify-content-between pe-5">
+                    <div class="payment-status d-flex align-items-center">
+                      <span class="circle circle-blue"></span
+                      ><span>Folyamatban</span>
+                    </div>
+                    <button>
+                      <img src="/assets/attachment.svg" alt="attachment icon" />
+                    </button>
+                    <button
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseExample"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      <img src="/assets/arrow-down.svg" alt="arrow down" />
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
