@@ -15,3 +15,35 @@ body {
 header {
   height: 80px;
 }
+
+button {
+  border: none;
+  background-color: $white;
+}
+
+.client-data-details-title {
+  align-items: center;
+  border-bottom: 1px solid $grey-lightest;
+  color: $blue-dark;
+  display: flex;
+  font-weight: 600;
+  height: 80px;
+  letter-spacing: 0.75px;
+  line-height: 20.43px;
+}
+
+.client-data-details-list {
+  font-size: 14px;
+  letter-spacing: 0.75px;
+  font-weight: 400;
+  line-height: 20.48px;
+  padding-top: 20px;
+}
+
+.client-data-details-list dt {
+  font-weight: 400;
+}
+
+.client-data-details-list dd {
+  margin-bottom: 20px;
+}
