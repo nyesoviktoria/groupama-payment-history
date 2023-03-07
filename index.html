@@ -16,24 +16,26 @@
     <header class="navbar shadow-sm bg-white">
       <nav
         class="container-md d-flex justify-content-between align-items-center px-0 ps-2"
-        style="width: 1180px"
       >
         <a class="navbar-brand mr-auto" href="https://www.groupama.hu/"
           ><img src="./assets/logo.png" alt="Groupama logo"
         /></a>
         <div class="d-flex align-items-center">
-          <img class="pe-2" src="./assets/exit.svg" alt="exit logo" />Kilépés
+          <img class="pe-2" src="./assets/exit.svg" alt="exit logo" /><span
+            class="d-none d-lg-block"
+            >Kilépés</span
+          >
         </div>
       </nav>
     </header>
-    <div class="container-md px-0" style="width: 1180px">
+    <div class="container-md px-0">
       <div class="row d-flex mx-0">
         <div class="col-3 d-none d-lg-block px-0 pe-2">
-          <div class="bg-white vh-100 ps-4">
-            <p class="client-data-details-title">
+          <div class="bg-white vh-100">
+            <p class="client-data-details-title ps-4">
               Folyamatos Díjfizetésű Ultra Prémium Életbiztosítás
             </p>
-            <dl class="client-data-details-list">
+            <dl class="client-data-details-list ps-4">
               <dt>Szerződő neve</dt>
               <dd>Kovács István</dd>
 
@@ -69,10 +71,8 @@
                   class="row d-flex align-items-center"
                   style="height: 79px; border-bottom: 1px solid #f1f2f4"
                 >
-                  <div
-                    class="col-2 d-flex align-items-center position-relative"
-                  >
-                    <button class="arrow-right position-absolute">
+                  <div class="col-2 d-flex align-items-center">
+                    <button class="arrow-right">
                       <img
                         src="/assets/arrow-right.svg"
                         alt="arrow to the right"
@@ -107,10 +107,8 @@
                   class="row d-flex align-items-center"
                   style="height: 79px; border-bottom: 1px solid #f1f2f4"
                 >
-                  <div
-                    class="col-2 d-flex align-items-center position-relative"
-                  >
-                    <button class="arrow-right position-absolute invisible">
+                  <div class="col-2 d-flex align-items-center">
+                    <button class="arrow-right invisible">
                       <img
                         src="/assets/arrow-right.svg"
                         alt="arrow to the right"
@@ -145,10 +143,8 @@
                   class="row d-flex align-items-center"
                   style="height: 79px; border-bottom: 1px solid #f1f2f4"
                 >
-                  <div
-                    class="col-2 d-flex align-items-center position-relative"
-                  >
-                    <button class="arrow-right position-absolute">
+                  <div class="col-2 d-flex align-items-center">
+                    <button class="arrow-right">
                       <img
                         src="/assets/arrow-right.svg"
                         alt="arrow to the right"
@@ -184,10 +180,8 @@
                   class="row d-flex align-items-center"
                   style="height: 79px; border-bottom: 1px solid #f1f2f4"
                 >
-                  <div
-                    class="col-2 d-flex align-items-center position-relative"
-                  >
-                    <button class="arrow-right position-absolute">
+                  <div class="col-2 d-flex align-items-center">
+                    <button class="arrow-right">
                       <img
                         src="/assets/arrow-right.svg"
                         alt="arrow to the right"
@@ -212,7 +206,11 @@
                       aria-expanded="false"
                       aria-controls="collapseExample"
                     >
-                      <img src="/assets/arrow-down.svg" alt="arrow down" />
+                      <img
+                        src="/assets/arrow-down.svg"
+                        alt="arrow down"
+                        class="rotate-180"
+                      />
                     </button>
                   </div>
                 </div>
@@ -221,32 +219,34 @@
                     class="row bg-white d-flex align-items-center"
                     style="height: 91px; border-bottom: 1px solid #f1f2f4"
                   >
-                    <dl class="col-4 my-0">
-                      <dt>Biztosítási időszak</dt>
-                      <dd>2019. 06. 02 - 07. 01.</dd>
-                    </dl>
-                    <dl class="col-2 my-0">
-                      <dt>Díjelőírás</dt>
-                      <dd>5 000 Ft</dd>
-                    </dl>
-                    <dl class="col-6 my-0">
-                      <dt>Könyvelt díj</dt>
-                      <dd>5 000 Ft</dd>
+                    <dl class="d-flex align-items-center my-0 px-0">
+                      <span class="col-4 my-0 ps-3">
+                        <dt>Biztosítási időszak</dt>
+                        <dd>2019. 06. 02 - 07. 01.</dd>
+                      </span>
+                      <span class="col-2 my-0">
+                        <dt>Díjelőírás</dt>
+                        <dd>5 000 Ft</dd>
+                      </span>
+                      <span class="col-6 my-0">
+                        <dt>Könyvelt díj</dt>
+                        <dd><strong>5 000 Ft</strong></dd>
+                      </span>
                     </dl>
                   </div>
                   <div
                     class="row bg-white d-flex align-items-center"
                     style="height: 100px"
                   >
-                    <div class="col-6">
-                      <p>Csatolmány</p>
-                      <div>
+                    <div class="col-6 ps-3">
+                      <p class="pb-3 my-0">Csatolmány</p>
+                      <a href="#" class="text-reset text-decoration-none">
                         <img
                           class="pe-3"
                           src="/assets/pdf.svg"
                           alt="pdf icon"
                         /><span>Fizetési nyugta letöltése</span>
-                      </div>
+                      </a>
                     </div>
                   </div>
                 </div>
