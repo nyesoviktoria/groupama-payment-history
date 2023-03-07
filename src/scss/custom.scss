@@ -6,11 +6,17 @@
 .row {
   margin: 0;
   padding: 0;
+  padding-left: 0;
 }
 
+.col-1,
 .col-2,
 .col-4,
-.col-6 {
+.col-6,
+.col-8,
+.col-10,
+.col-11,
+.col-12 {
   margin: 0;
   padding: 0;
 }

@@ -9,9 +9,13 @@
 }
 
 body {
-  background-color: $grey-light;
+  background-color: $grey-lightest;
   color: $grey-dark;
   font-family: "Open Sans";
+}
+
+p {
+  margin: 0;
 }
 
 button {
@@ -22,6 +26,23 @@ button {
 .header {
   box-shadow: $box-shadow-light;
   height: 80px;
+}
+
+.three-dots-in-nav {
+  background-color: $grey-light;
+  border-radius: 50%;
+  gap: 2.43px;
+  height: 30px;
+  margin-right: 15px;
+  width: 30px;
+}
+
+.dot {
+  display: inline-block;
+  height: 3.83px;
+  width: 3.83px;
+  border-radius: 50%;
+  background-color: $blue-dark;
 }
 
 .client-data-details__title {
@@ -44,8 +65,15 @@ button {
   border-bottom: $border-line-strong;
   box-sizing: content-box;
   gap: 30px;
-  height: 80px;
+  height: 67px;
   list-style: none;
+  margin-bottom: 23px;
+  text-align: center;
+
+  @include desktop {
+    height: 80px;
+    text-align: start;
+  }
 }
 
 .active-navigation-item {
@@ -59,8 +87,12 @@ button {
     display: block;
     height: 3px;
     position: absolute;
-    transform: translateY(29px);
+    transform: translateY(12px);
     width: 100%;
+
+    @include tablet {
+      transform: translateY(29px);
+    }
   }
 }
 
@@ -84,9 +116,13 @@ button {
   overflow: hidden;
 }
 
-.payment-history-table__item-visible-part {
+.payment-history-table__item-visible-part-desktop {
   height: 79px;
   padding-left: 20px;
+}
+
+.payment-history-table__item-visible-part-mobile {
+  @include fs12;
 }
 
 .arrow-right {
@@ -97,20 +133,29 @@ button {
   letter-spacing: 0.75px;
 }
 
-.payment-amount {
+.payment-amount-desktop {
   @include fs16;
 }
 
-.payment-status {
+.payment-amount-mobile {
+  @include fs16-wide;
+}
+
+.payment-status-desktop {
   letter-spacing: 0.75px;
 }
 
 .circle {
   border-radius: 50%;
   display: inline-block;
-  height: 6px;
-  margin-right: 8px;
-  width: 6px;
+  height: 12px;
+  width: 12px;
+
+  @include desktop {
+    height: 6px;
+    margin-right: 8px;
+    width: 6px;
+  }
 }
 
 .circle-blue {
@@ -143,4 +188,29 @@ button {
   border-top: $border-line-sm;
   height: 100px;
   padding-left: 20px;
+}
+
+//Mobile
+
+.payment-history-table__item-collapsible-part-mobile-transaction-data-list {
+  font-size: 12px;
+  margin: 0;
+}
+
+.payment-history-table__item-collapsible-part-mobile-transaction-data-list dd {
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.payment-history-table__item-collapsible-part-mobile-account-data {
+  border-top: $border-line-sm;
+}
+
+.mobile-style {
+  border-top: $border-line-sm;
+  padding: 24px 16px;
+}
+
+.accounted-data__list dt {
+  font-size: 12px;
 }

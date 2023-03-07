@@ -2,8 +2,8 @@ $blue-dark: #283168;
 $blue-light: #a1caff;
 $green: #01bba1;
 $grey-dark: #3d424c;
-$grey-light: #e5e5e5;
-$grey-lightest: #f1f2f4;
+$grey-light: #f1f2f4;
+$grey-lightest: #fafafc;
 $grey-medium: #6f7381;
 $red: #dc414f;
 $white: #ffffff;
@@ -11,8 +11,8 @@ $white: #ffffff;
 $border-radius-sm: 2px;
 $border-radius: 4px;
 
-$border-line-sm: 1px solid $grey-lightest;
-$border-line-strong: 3px solid $grey-lightest;
+$border-line-sm: 1px solid $grey-light;
+$border-line-strong: 3px solid $grey-light;
 
 $box-shadow-light: 0px 2px 12px 0px #0a113d1a;
 $box-shadow-dark: 0px 4px 8px 0px #0000001a;
@@ -81,7 +81,6 @@ $box-shadow-dark: 0px 4px 8px 0px #0000001a;
 }
 
 @mixin fs12 {
-  color: $grey-dark;
   font-size: 12px;
   font-weight: 400;
 }
@@ -89,4 +88,58 @@ $box-shadow-dark: 0px 4px 8px 0px #0000001a;
 @mixin fs12-tight {
   @include fs12;
   letter-spacing: 0.5px;
+}
+
+@mixin mobile {
+  @media all and (min-width: 0) {
+    @content;
+  }
+}
+
+@mixin mobile-only {
+  @media all and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media all and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media all and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop-only {
+  @media all and (min-width: 1024px) and (max-width: 1279px) {
+    @content;
+  }
+}
+
+@mixin desktop-lg {
+  @media all and (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin desktop-lg-only {
+  @media all and (min-width: 1280px) and (max-width: 1463px) {
+    @content;
+  }
+}
+
+@mixin desktop-xl {
+  @media all and (min-width: 1464px) {
+    @content;
+  }
 }
