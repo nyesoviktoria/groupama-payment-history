@@ -1,3 +1,3 @@
 import "bootstrap";
-import "./sass/main.scss";
-import "./sass/variables.scss";
+import "./scss/main.scss";
+import "./scss/variables.scss";
