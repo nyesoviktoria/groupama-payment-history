@@ -1,4 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
+@import "variables";
 
 * {
   margin: 0;
@@ -7,6 +8,10 @@
 }
 
 body {
-  font-family: "Open Sans";
   background-color: $grey-light;
+  font-family: "Open Sans";
+}
+
+header {
+  height: 80px;
 }
