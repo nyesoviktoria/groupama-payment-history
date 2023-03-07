@@ -111,7 +111,7 @@
             >
               <li class="container bg-white payment-history-table__item-card">
                 <div
-                  class="row d-none d-lg-flex align-items-center payment-history-table__item-visible-part-desktop"
+                  class="row d-none d-lg-flex align-items-center payment-card__desktop-visible"
                 >
                   <div class="col-2 d-flex align-items-center">
                     <button class="arrow-right">
@@ -146,7 +146,7 @@
                   </div>
                 </div>
                 <div
-                  class="d-flex align-items-center d-lg-none payment-history-table__item-visible-part-mobile px-3 py-4"
+                  class="d-flex align-items-center d-lg-none payment-card__mobile-visible"
                 >
                   <div class="col-1">
                     <span class="circle circle-blue"></span>
@@ -171,7 +171,7 @@
               </li>
               <li class="container bg-white payment-history-table__item-card">
                 <div
-                  class="row d-none d-lg-flex align-items-center payment-history-table__item-visible-part-desktop"
+                  class="row d-none d-lg-flex align-items-center payment-card__desktop-visible"
                 >
                   <div class="col-2 d-flex align-items-center">
                     <button class="arrow-right invisible">
@@ -206,7 +206,7 @@
                   </div>
                 </div>
                 <div
-                  class="d-flex align-items-center d-lg-none payment-history-table__item-visible-part-mobile px-3 py-4"
+                  class="d-flex align-items-center d-lg-none payment-card__mobile-visible"
                 >
                   <div class="col-1">
                     <span class="circle circle-green"></span>
@@ -237,7 +237,7 @@
               </li>
               <li class="container bg-white payment-history-table__item-card">
                 <div
-                  class="row d-none d-lg-flex align-items-center payment-history-table__item-visible-part-desktop"
+                  class="row d-none d-lg-flex align-items-center payment-card__desktop-visible"
                 >
                   <div class="col-2 d-flex align-items-center">
                     <button class="arrow-right">
@@ -272,7 +272,7 @@
                   </div>
                 </div>
                 <div
-                  class="d-flex align-items-center d-lg-none payment-history-table__item-visible-part-mobile px-3 py-4"
+                  class="d-flex align-items-center d-lg-none payment-card__mobile-visible"
                 >
                   <div class="col-1">
                     <span class="circle circle-green"></span>
@@ -305,7 +305,7 @@
               <li class="container bg-white payment-history-table__item-card">
                 <div class="d-none d-lg-block">
                   <div
-                    class="row d-flex align-items-center payment-history-table__item-visible-part-desktop"
+                    class="row d-flex align-items-center payment-card__desktop-visible"
                   >
                     <div class="col-2 d-flex align-items-center">
                       <button class="arrow-right">
@@ -347,28 +347,25 @@
                     </div>
                   </div>
                   <div class="collapse show px-0" id="collapseExample">
-                    <div
-                      class="row bg-white d-flex align-items-center payment-history-table__item-collapsible-part-data"
+                    <dl
+                      class="row d-flex align-items-center my-0 payment-card__desktop-collapsible-row"
                     >
-                      <dl
-                        class="d-flex align-items-center my-0 px-0 payment-history-table__item-collapsible-part-data-list"
-                      >
-                        <div class="col-4 my-0 ps-3">
-                          <dt>Biztosítási időszak</dt>
-                          <dd>2019. 06. 02 - 07. 01.</dd>
-                        </div>
-                        <div class="col-2 my-0">
-                          <dt>Díjelőírás</dt>
-                          <dd>5 000 Ft</dd>
-                        </div>
-                        <div class="col-6 my-0">
-                          <dt>Könyvelt díj</dt>
-                          <dd><strong>5 000 Ft</strong></dd>
-                        </div>
-                      </dl>
-                    </div>
+                      <div class="col-4 my-0 ps-3">
+                        <dt>Biztosítási időszak</dt>
+                        <dd>2019. 06. 02 - 07. 01.</dd>
+                      </div>
+                      <div class="col-2 my-0">
+                        <dt>Díjelőírás</dt>
+                        <dd>5 000 Ft</dd>
+                      </div>
+                      <div class="col-6 my-0">
+                        <dt>Könyvelt díj</dt>
+                        <dd><strong>5 000 Ft</strong></dd>
+                      </div>
+                    </dl>
+
                     <div
-                      class="row bg-white d-flex align-items-center payment-history-table__item-collapsible-part-download"
+                      class="row bg-white d-flex align-items-center payment-card__desktop-collapsible-row"
                     >
                       <div class="col-6 ps-3">
                         <p class="pb-2 my-0">Csatolmány</p>
@@ -388,7 +385,7 @@
                 </div>
                 <div class="d-lg-none">
                   <div
-                    class="d-flex align-items-center d-lg-none payment-history-table__item-visible-part-mobile py-4 px-3"
+                    class="d-flex align-items-center d-lg-none payment-card__mobile-visible"
                   >
                     <div class="col-1">
                       <span class="circle circle-green"></span>
@@ -420,72 +417,74 @@
                       </button>
                     </div>
                   </div>
-                  <dl
-                    class="payment-history-table__item-collapsible-part-mobile-transaction-data-list mobile-style"
-                  >
-                    <dt>Státusz</dt>
-                    <dd>Folyamatban</dd>
-                    <dt>Azonosító</dt>
-                    <dd>12345678</dd>
-                    <dt>Hogyan</dt>
-                    <dd class="mb-0">Bankkártya</dd>
-                  </dl>
-                  <div class="row align-items-center mobile-style">
-                    <p class="col-12 pb-2 my-0">Csatolmány</p>
-                    <div class="col-11">
+                  <div class="collapse show px-0" id="collapseExample">
+                    <dl
+                      class="payment-card__mobile-collapsible-transaction-data mobile-style"
+                    >
+                      <dt>Státusz</dt>
+                      <dd>Folyamatban</dd>
+                      <dt>Azonosító</dt>
+                      <dd>12345678</dd>
+                      <dt>Hogyan</dt>
+                      <dd class="mb-0">Bankkártya</dd>
+                    </dl>
+                    <div class="row align-items-center mobile-style">
+                      <p class="col-12 pb-2 my-0">Csatolmány</p>
+                      <div class="col-11">
+                        <a
+                          href="#"
+                          class="text-reset text-decoration-none d-flex align-items-center"
+                        >
+                          <img
+                            class="pe-3"
+                            src="/assets/pdf.svg"
+                            alt="pdf icon"
+                          /><span>Fizetési nyugta letöltése</span>
+                        </a>
+                      </div>
                       <a
+                        class="col-1"
                         href="#"
-                        class="text-reset text-decoration-none d-flex align-items-center"
+                        class="col-1 text-reset text-decoration-none"
                       >
-                        <img
-                          class="pe-3"
-                          src="/assets/pdf.svg"
-                          alt="pdf icon"
-                        /><span>Fizetési nyugta letöltése</span>
+                        <img src="/assets/download.svg" alt="download logo" />
                       </a>
                     </div>
-                    <a
-                      class="col-1"
-                      href="#"
-                      class="col-1 text-reset text-decoration-none"
-                    >
-                      <img src="/assets/download.svg" alt="download logo" />
-                    </a>
+                    <ul class="list-unstyled accounted-data__list px-0">
+                      <li class="mobile-style">
+                        <dl class="row">
+                          <div class="col-12">
+                            <dt>Időszak</dt>
+                            <dd class="mb-4">2019. 11. 20- 2020. 11. 19</dd>
+                          </div>
+                          <div class="col-8">
+                            <dt>Díjelőírás</dt>
+                            <dd>5 000 Ft</dd>
+                          </div>
+                          <div class="col-4">
+                            <dt>Könyvelt díj</dt>
+                            <dd><strong>5 000 Ft</strong></dd>
+                          </div>
+                        </dl>
+                      </li>
+                      <li class="mobile-style">
+                        <dl class="row">
+                          <div class="col-12">
+                            <dt>Időszak</dt>
+                            <dd class="mb-4">2019. 11. 20- 2020. 11. 19</dd>
+                          </div>
+                          <div class="col-8">
+                            <dt>Díjelőírás</dt>
+                            <dd>7 500 Ft</dd>
+                          </div>
+                          <div class="col-4">
+                            <dt>Könyvelt díj</dt>
+                            <dd><strong>7 500 Ft</strong></dd>
+                          </div>
+                        </dl>
+                      </li>
+                    </ul>
                   </div>
-                  <ul class="list-unstyled accounted-data__list px-0">
-                    <li class="mobile-style">
-                      <dl class="row">
-                        <div class="col-12">
-                          <dt>Időszak</dt>
-                          <dd class="mb-4">2019. 11. 20- 2020. 11. 19</dd>
-                        </div>
-                        <div class="col-8">
-                          <dt>Díjelőírás</dt>
-                          <dd>5 000 Ft</dd>
-                        </div>
-                        <div class="col-4">
-                          <dt>Könyvelt díj</dt>
-                          <dd><strong>5 000 Ft</strong></dd>
-                        </div>
-                      </dl>
-                    </li>
-                    <li class="mobile-style">
-                      <dl class="row">
-                        <div class="col-12">
-                          <dt>Időszak</dt>
-                          <dd class="mb-4">2019. 11. 20- 2020. 11. 19</dd>
-                        </div>
-                        <div class="col-8">
-                          <dt>Díjelőírás</dt>
-                          <dd>7 500 Ft</dd>
-                        </div>
-                        <div class="col-4">
-                          <dt>Könyvelt díj</dt>
-                          <dd><strong>7 500 Ft</strong></dd>
-                        </div>
-                      </dl>
-                    </li>
-                  </ul>
                 </div>
               </li>
             </ul>

@@ -104,7 +104,7 @@ button {
   overflow: hidden;
 }
 
-.payment-history-table__item-visible-part-desktop {
+.payment-card__desktop-visible {
   height: 79px;
   padding-left: 20px;
 }
@@ -158,40 +158,30 @@ button {
   transform: rotate(180deg);
 }
 
-.payment-history-table__item-collapsible-part-data {
+.payment-card__desktop-collapsible-row {
   border-top: $border-line-sm;
-  height: 91px;
-  padding-left: 20px;
+  padding: 24px 0 24px 20px;
 }
 
-.payment-history-table__item-collapsible-part-data-list dd {
+.payment-card__desktop-collapsible-row dd {
   font-size: 15px;
-}
-
-.payment-history-table__item-collapsible-part-download {
-  border-top: $border-line-sm;
-  height: 100px;
-  padding-left: 20px;
 }
 
 //Mobile
 
-.payment-history-table__item-visible-part-mobile {
+.payment-card__mobile-visible {
   @include fs12;
+  padding: 24px 16px;
 }
 
-.payment-history-table__item-collapsible-part-mobile-transaction-data-list {
+.payment-card__mobile-collapsible-transaction-data {
   font-size: 12px;
   margin: 0;
 }
 
-.payment-history-table__item-collapsible-part-mobile-transaction-data-list dd {
+.payment-card__mobile-collapsible-transaction-data dd {
   font-size: 14px;
   margin-bottom: 24px;
-}
-
-.payment-history-table__item-collapsible-part-mobile-account-data {
-  border-top: $border-line-sm;
 }
 
 .mobile-style {
