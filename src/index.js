@@ -9,5 +9,9 @@ const buttonCollapseElement = document.querySelectorAll(
 buttonCollapseElement.forEach((button) =>
   button.addEventListener("click", () => {
     button.classList.toggle("rotate-180");
+    button
+      .closest('div[data-id="truncate-section"]')
+      ?.querySelector("span")
+      .classList.toggle("text-truncate");
   })
 );
