@@ -53,11 +53,11 @@ dt {
   @include fs-14-fw-400-tight-dark-blue;
 }
 
-.client-data-details {
+.insurance-data-details {
   box-shadow: $box-shadow-light;
 }
 
-.client-data-details__title {
+.insurance-data-details__title {
   @include fs-15-blue;
 
   border-bottom: $border-line-sm;
@@ -65,7 +65,7 @@ dt {
   padding-left: 20px;
 }
 
-.client-data-details__list {
+.insurance-data-details__list {
   @include fs-14-fw-400-wide;
 
   padding: 20px 0 0 20px;
@@ -76,11 +76,11 @@ dt {
 
   border-bottom: $border-line-strong;
   box-sizing: content-box;
-  gap: 23px;
   height: 67px;
   list-style: none;
-  margin: 0 0px 23px 0px;
+  margin: 0 0 23px 0;
   text-align: center;
+  gap: 20px;
 
   @include desktop {
     gap: 30px;

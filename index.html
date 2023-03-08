@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="hu">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Groupama Payment History</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet"
-    />
+    >
   </head>
   <body>
     <header class="navbar bg-white header">
@@ -27,12 +27,12 @@
             class="d-none d-lg-inline"
             src="./assets/logo-desktop.png"
             alt="Groupama logo"
-          />
+          >
           <img
             class="d-lg-none d-inline"
             src="./assets/logo-mobile.png"
             alt="Groupama logo"
-          />
+          >
         </a>
         <div class="d-flex align-items-center">
           <button
@@ -48,7 +48,7 @@
             class="d-flex align-items-center text-reset text-decoration-none"
             href="#"
           >
-            <img class="pe-2" src="./assets/exit.svg" alt="kilépés ikon" /><span
+            <img class="pe-2" src="./assets/exit.svg" alt="kilépés ikon" ><span
               class="d-none d-lg-block exit-text"
               >Kilépés</span
             ></a
@@ -58,14 +58,17 @@
     </header>
     <div class="container-sm px-lg-0 px-3">
       <div class="row">
-        <div class="col-3 d-none d-lg-block pe-2">
-          <div class="bg-white vh-100 client-data-details">
+        <aside
+          class="col-3 d-none d-lg-block pe-2"
+          aria-label="biztosítási szerződés adatai"
+        >
+          <div class="bg-white vh-100 insurance-data-details">
             <p
-              class="d-flex align-items-center my-0 client-data-details__title"
+              class="d-flex align-items-center my-0 insurance-data-details__title"
             >
               Folyamatos Díjfizetésű Ultra Prémium Életbiztosítás
             </p>
-            <dl class="client-data-details__list">
+            <dl class="insurance-data-details__list">
               <dt>Szerződő neve</dt>
               <dd class="mb-4">Kovács István</dd>
 
@@ -79,11 +82,14 @@
               <dd>2019. 07. 01.</dd>
             </dl>
           </div>
-        </div>
+        </aside>
 
-        <div class="col-12 col-lg-9 px-0 ps-lg-3">
+        <main
+          class="col-12 col-lg-9 px-0 ps-lg-3"
+          aria-label="biztosítási szerződés fizetési részletei"
+        >
           <nav
-            class="d-flex justify-content-center justify-content-lg-start align-items-center px-0 navigation-items__list"
+            class="d-flex justify-content-between justify-content-lg-start align-items-center px-0 navigation-items__list"
           >
             <a class="text-reset text-decoration-none" href="#"
               >Fizetendő tételek</a
@@ -127,7 +133,7 @@
                         data-id="arrow-to-rotate"
                         aria-label="azonosító teljes hosszának megjelenítése"
                       >
-                        <img src="/assets/arrow-right.svg" alt="nyíl" /></button
+                        <img src="/assets/arrow-right.svg" alt="nyíl" ></button
                       ><span class="text-truncate truncatable-element"
                         >EPAYMT812345</span
                       >
@@ -150,7 +156,7 @@
                         <img
                           src="/assets/attachment.svg"
                           alt="csatolmány ikon"
-                        />
+                        >
                       </a>
                       <button
                         class="arrow"
@@ -162,7 +168,7 @@
                         data-id="arrow-to-rotate"
                         aria-label="tranzakció részleteinek megjelenítése"
                       >
-                        <img src="/assets/arrow-down-desktop.svg" alt="nyíl" />
+                        <img src="/assets/arrow-down-desktop.svg" alt="nyíl" >
                       </button>
                     </div>
                   </div>
@@ -198,7 +204,7 @@
                             class="pe-3"
                             src="/assets/pdf.svg"
                             alt="dokumentum ikon"
-                          /><span>Fizetési nyugta letöltése</span>
+                          ><span>Fizetési nyugta letöltése</span>
                         </a>
                       </div>
                     </div>
@@ -224,7 +230,7 @@
                           <img
                             src="/assets/attachment.svg"
                             alt="csatolmány ikon"
-                          />
+                          >
                         </a>
                       </p>
                     </div>
@@ -239,7 +245,7 @@
                         data-id="arrow-to-rotate"
                         aria-label="tranzakció részleteinek megjelenítése"
                       >
-                        <img src="/assets/arrow-down-mobile.svg" alt="nyíl" />
+                        <img src="/assets/arrow-down-mobile.svg" alt="nyíl" >
                       </button>
                     </div>
                   </div>
@@ -264,7 +270,7 @@
                             class="pe-3"
                             src="/assets/pdf.svg"
                             alt="dokumentum ikon"
-                          /><span>Fizetési nyugta letöltése</span>
+                          ><span>Fizetési nyugta letöltése</span>
                         </div>
                       </div>
                       <a
@@ -272,7 +278,7 @@
                         href="#"
                         aria-label="fizetési nyugta letöltése"
                       >
-                        <img src="/assets/download.svg" alt="letöltés ikon" />
+                        <img src="/assets/download.svg" alt="letöltés ikon" >
                       </a>
                     </div>
                     <ul class="list-unstyled px-0 accounted-data__list">
@@ -332,7 +338,7 @@
                           src="/assets/arrow-right.svg"
                           alt="nyíl"
                           aria-hidden="true"
-                        /></button
+                        ></button
                       ><span class="text-truncate truncatable-element"
                         >12345678</span
                       >
@@ -355,7 +361,7 @@
                         <img
                           src="/assets/attachment.svg"
                           alt="csatolmány ikon"
-                        />
+                        >
                       </a>
                       <button
                         class="arrow"
@@ -367,7 +373,7 @@
                         data-id="arrow-to-rotate"
                         aria-label="tranzakció részleteinek megjelenítése"
                       >
-                        <img src="/assets/arrow-down-desktop.svg" alt="nyíl" />
+                        <img src="/assets/arrow-down-desktop.svg" alt="nyíl" >
                       </button>
                     </div>
                   </div>
@@ -403,7 +409,7 @@
                             class="pe-3"
                             src="/assets/pdf.svg"
                             alt="dokumentum ikon"
-                          /><span>Fizetési nyugta letöltése</span>
+                          ><span>Fizetési nyugta letöltése</span>
                         </a>
                       </div>
                     </div>
@@ -429,7 +435,7 @@
                           <img
                             src="/assets/attachment.svg"
                             alt="csatolmány ikon"
-                          />
+                          >
                         </a>
                       </p>
                     </div>
@@ -444,7 +450,7 @@
                         data-id="arrow-to-rotate"
                         aria-label="tranzakció részleteinek megjelenítése"
                       >
-                        <img src="/assets/arrow-down-mobile.svg" alt="nyíl" />
+                        <img src="/assets/arrow-down-mobile.svg" alt="nyíl" >
                       </button>
                     </div>
                   </div>
@@ -469,7 +475,7 @@
                             class="pe-3"
                             src="/assets/pdf.svg"
                             alt="dokumentum ikon"
-                          /><span>Fizetési nyugta letöltése</span>
+                          ><span>Fizetési nyugta letöltése</span>
                         </div>
                       </div>
                       <a
@@ -477,7 +483,7 @@
                         href="#"
                         aria-label="fizetési nyugta letöltése"
                       >
-                        <img src="/assets/download.svg" alt="letöltés ikon" />
+                        <img src="/assets/download.svg" alt="letöltés ikon" >
                       </a>
                     </div>
                     <ul class="list-unstyled px-0 accounted-data__list">
@@ -516,7 +522,7 @@
                         data-id="arrow-to-rotate"
                         aria-label="azonosító teljes hosszának megjelenítése"
                       >
-                        <img src="/assets/arrow-right.svg" alt="nyíl" /></button
+                        <img src="/assets/arrow-right.svg" alt="nyíl" ></button
                       ><span class="text-truncate truncatable-element"
                         >EPAYMT812345</span
                       >
@@ -539,7 +545,7 @@
                         <img
                           src="/assets/attachment.svg"
                           alt="csatolmány ikon"
-                        />
+                        >
                       </a>
                       <button
                         class="arrow"
@@ -551,7 +557,7 @@
                         data-id="arrow-to-rotate"
                         aria-label="tranzakció részleteinek megjelenítése"
                       >
-                        <img src="/assets/arrow-down-desktop.svg" alt="nyíl" />
+                        <img src="/assets/arrow-down-desktop.svg" alt="nyíl" >
                       </button>
                     </div>
                   </div>
@@ -587,7 +593,7 @@
                             class="pe-3"
                             src="/assets/pdf.svg"
                             alt="dokumentum ikon"
-                          /><span>Fizetési nyugta letöltése</span>
+                          ><span>Fizetési nyugta letöltése</span>
                         </a>
                       </div>
                     </div>
@@ -613,7 +619,7 @@
                           <img
                             src="/assets/attachment.svg"
                             alt="csatolmány ikon"
-                          />
+                          >
                         </a>
                       </p>
                     </div>
@@ -628,7 +634,7 @@
                         data-id="arrow-to-rotate"
                         aria-label="tranzakció részleteinek megjelenítése"
                       >
-                        <img src="/assets/arrow-down-mobile.svg" alt="nyíl" />
+                        <img src="/assets/arrow-down-mobile.svg" alt="nyíl" >
                       </button>
                     </div>
                   </div>
@@ -653,7 +659,7 @@
                             class="pe-3"
                             src="/assets/pdf.svg"
                             alt="dokumentum ikon"
-                          /><span>Fizetési nyugta letöltése</span>
+                          ><span>Fizetési nyugta letöltése</span>
                         </div>
                       </div>
                       <a
@@ -661,7 +667,7 @@
                         href="#"
                         aria-label="fizetési nyugta letöltése"
                       >
-                        <img src="/assets/download.svg" alt="letöltés ikon" />
+                        <img src="/assets/download.svg" alt="letöltés ikon" >
                       </a>
                     </div>
                     <ul class="list-unstyled px-0 accounted-data__list">
@@ -716,7 +722,7 @@
                         data-id="arrow-to-rotate"
                         aria-label="azonosító teljes hosszának megjelenítése"
                       >
-                        <img src="/assets/arrow-right.svg" alt="nyíl" /></button
+                        <img src="/assets/arrow-right.svg" alt="nyíl" ></button
                       ><span class="text-truncate truncatable-element"
                         >EPAYMT812345</span
                       >
@@ -739,7 +745,7 @@
                         <img
                           src="/assets/attachment.svg"
                           alt="csatolmány ikon"
-                        />
+                        >
                       </a>
                       <button
                         class="arrow rotate-180"
@@ -751,7 +757,7 @@
                         data-id="arrow-to-rotate"
                         aria-label="tranzakció részleteinek megjelenítése"
                       >
-                        <img src="/assets/arrow-down-desktop.svg" alt="nyíl" />
+                        <img src="/assets/arrow-down-desktop.svg" alt="nyíl" >
                       </button>
                     </div>
                   </div>
@@ -787,7 +793,7 @@
                             class="pe-3"
                             src="/assets/pdf.svg"
                             alt="dokumentum ikon"
-                          /><span>Fizetési nyugta letöltése</span>
+                          ><span>Fizetési nyugta letöltése</span>
                         </a>
                       </div>
                     </div>
@@ -813,7 +819,7 @@
                           <img
                             src="/assets/attachment.svg"
                             alt="csatolmány ikon"
-                          />
+                          >
                         </a>
                       </p>
                     </div>
@@ -828,7 +834,7 @@
                         data-id="arrow-to-rotate"
                         aria-label="tranzakció részleteinek megjelenítése"
                       >
-                        <img src="/assets/arrow-down-mobile.svg" alt="nyíl" />
+                        <img src="/assets/arrow-down-mobile.svg" alt="nyíl" >
                       </button>
                     </div>
                   </div>
@@ -853,7 +859,7 @@
                             class="pe-3"
                             src="/assets/pdf.svg"
                             alt="dokumentum ikon"
-                          /><span>Fizetési nyugta letöltése</span>
+                          ><span>Fizetési nyugta letöltése</span>
                         </div>
                       </div>
                       <a
@@ -861,7 +867,7 @@
                         href="#"
                         aria-label="fizetési nyugta letöltése"
                       >
-                        <img src="/assets/download.svg" alt="letöltés ikon" />
+                        <img src="/assets/download.svg" alt="letöltés ikon" >
                       </a>
                     </div>
                     <ul class="list-unstyled px-0 accounted-data__list">
@@ -887,7 +893,7 @@
               </li>
             </ul>
           </div>
-        </div>
+        </main>
       </div>
     </div>
   </body>
