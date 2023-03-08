@@ -91,11 +91,8 @@ $box-shadow-dark: 0px 4px 8px 0px #0000001a;
   letter-spacing: 0.5px;
 }
 
-
-
 @mixin desktop {
   @media all and (min-width: 1024px) {
     @content;
   }
 }
-

@@ -51,6 +51,20 @@
       </nav>
     </header>
 
+    <!-- <button
+      class="btn btn-inf"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapseOne"
+    >
+      Kattincsa
+    </button>
+
+    <div id="collapseOne" class="collapse">
+      <h1>ASDFASDFASDFASDFASDFASDF</h1>
+      JUHEJ'''
+    </div> -->
+
     <div class="container-sm px-lg-0 px-3">
       <div class="row">
         <div class="col-3 d-none d-lg-block pe-2">
@@ -320,7 +334,7 @@
                     <div class="col-2 payment-amount-desktop">5 000 Ft</div>
                     <div class="col-4 d-flex justify-content-between pe-5">
                       <div
-                        class="payment-status-desktop d-flex align-items-center"
+                        class="d-flex align-items-center payment-status-desktop"
                       >
                         <span class="circle circle-green"></span
                         ><span>Beérkezett</span>
@@ -332,21 +346,18 @@
                         />
                       </button>
                       <button
+                        class="arrow"
                         type="button"
-                        data-toggle="collapse"
-                        data-target="#collapseExample"
                         aria-expanded="false"
-                        aria-controls="collapseExample"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseDesktop"
+                        data-id="button-collapse"
                       >
-                        <img
-                          src="/assets/arrow-down-desktop.svg"
-                          alt="arrow"
-                          class="rotate-180"
-                        />
+                        <img src="/assets/arrow-down-desktop.svg" alt="arrow" />
                       </button>
                     </div>
                   </div>
-                  <div class="collapse show px-0" id="collapseExample">
+                  <div class="collapse px-0" id="collapseDesktop">
                     <dl
                       class="row d-flex align-items-center my-0 payment-card__desktop-collapsible-row"
                     >
@@ -403,21 +414,18 @@
                     </div>
                     <div class="col-1">
                       <button
+                        class="arrow"
                         type="button"
-                        data-toggle="collapse"
-                        data-target="#collapseExample"
                         aria-expanded="false"
-                        aria-controls="collapseExample"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseMobile"
+                        data-id="button-collapse"
                       >
-                        <img
-                          src="/assets/arrow-down-mobile.svg"
-                          alt="arrow"
-                          class="rotate-180"
-                        />
+                        <img src="/assets/arrow-down-mobile.svg" alt="arrow" />
                       </button>
                     </div>
                   </div>
-                  <div class="collapse show px-0" id="collapseExample">
+                  <div class="collapse px-0" id="collapseMobile">
                     <dl
                       class="payment-card__mobile-collapsible-transaction-data mobile-style"
                     >

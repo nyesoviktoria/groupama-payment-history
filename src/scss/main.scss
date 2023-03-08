@@ -1,6 +1,6 @@
+@import "custom";
 @import "bootstrap";
 @import "variables";
-@import "custom";
 
 * {
   margin: 0;
@@ -81,7 +81,19 @@ button {
   height: 100%;
   display: flex;
   align-items: center;
-  box-shadow: 0px 3px 0px $green;
+  position: relative;
+
+  &:after {
+    background: $green;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    position: absolute;
+    bottom: -4%;
+    width: 100%;
+    border-radius: $border-radius-sm;
+  }
 }
 
 .payment-history-table__titles-list {
@@ -152,6 +164,10 @@ button {
 
 .circle-red {
   background-color: $red;
+}
+
+.arrow {
+  transition: all 0.3s;
 }
 
 .rotate-180 {
