@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="hu">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Groupama Payment History</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet"
-    />
+    >
   </head>
   <body>
     <header class="navbar bg-white header">
       <nav
         class="container-lg d-flex justify-content-between align-items-center px-lg-0 ps-lg-4 px-3"
       >
-        <a class="navbar-brand" href="https://www.groupama.hu/">
+        <a
+          class="navbar-brand"
+          href="https://www.groupama.hu/"
+          target="_blank"
+          aria-label="Navigáció a Groupama főoldalára"
+        >
           <img
             class="d-none d-lg-inline"
             src="./assets/logo-desktop.png"
             alt="Groupama logo"
-          />
+          >
           <img
             class="d-lg-none d-inline"
             src="./assets/logo-mobile.png"
             alt="Groupama logo"
-          />
+          >
         </a>
         <div class="d-flex align-items-center">
           <button
@@ -42,8 +47,8 @@
             class="d-flex align-items-center text-reset text-decoration-none"
             href="#"
           >
-            <img class="pe-2" src="./assets/exit.svg" alt="exit logo" /><span
-              class="d-none d-lg-block"
+            <img class="pe-2" src="./assets/exit.svg" alt="kilépés ikon" ><span
+              class="d-none d-lg-block exit-text"
               >Kilépés</span
             ></a
           >
@@ -53,7 +58,7 @@
     <div class="container-sm px-lg-0 px-3">
       <div class="row">
         <div class="col-3 d-none d-lg-block pe-2">
-          <div class="bg-white vh-100">
+          <div class="bg-white vh-100 client-data-details">
             <p
               class="d-flex align-items-center my-0 client-data-details__title"
             >
@@ -76,25 +81,23 @@
         </div>
 
         <div class="col-12 col-lg-9 px-0 ps-lg-3">
-          <ul
-            class="d-flex justify-content-center justify-content-lg-start align-items-center px-0 my-lg-0 navigation-items__list"
+          <nav
+            class="d-flex justify-content-center justify-content-lg-start align-items-center px-0 navigation-items__list"
           >
-            <li>
-              <a class="text-reset text-decoration-none" href="#"
-                >Fizetendő tételek</a
-              >
-            </li>
-            <li>
-              <a class="text-reset text-decoration-none" href="#"
-                >Eseti díj befizetése</a
-              >
-            </li>
-            <li class="active-navigation-item">
-              <a class="text-reset text-decoration-none" href="#"
-                >Fizetési előzmények</a
-              >
-            </li>
-          </ul>
+            <a class="text-reset text-decoration-none" href="#"
+              >Fizetendő tételek</a
+            >
+
+            <a class="text-reset text-decoration-none" href="#"
+              >Eseti díj befizetése</a
+            >
+
+            <a
+              class="text-reset text-decoration-none active-navigation-item"
+              href="#"
+              >Fizetési előzmények</a
+            >
+          </nav>
           <div class="container pe-lg-5">
             <ul
               class="row mb-3 d-none d-lg-flex payment-history-table__titles-list"
@@ -108,203 +111,203 @@
             <ul
               class="d-flex flex-column px-0 payment-history-table__items-list"
             >
-              <!-- <li class="container bg-white payment-history-table__item-card">
-                <div
-                  class="row d-none d-lg-flex align-items-center payment-card__desktop-visible"
-                >
-                  <div class="col-2 d-flex align-items-center">
-                    <button class="arrow-right" type="button">
-                      <img
-                        src="/assets/arrow-right.svg"
-                        alt="arrow to the right"
-                      /></button
-                    ><span>EPAYMT8...</span>
-                  </div>
-                  <div class="col-2 payment-type">Bankkártya</div>
-                  <div class="col-2">2019. 06. 25.</div>
-                  <div class="col-2 payment-amount-desktop">5 000 Ft</div>
-                  <div class="col-4 d-flex justify-content-between pe-5">
-                    <div
-                      class="d-flex align-items-center payment-status-desktop"
-                    >
-                      <span class="circle circle-blue"></span
-                      ><span>Folyamatban</span>
-                    </div>
-                    <a class="text-reset text-decoration-none" href="#">
-                      <img src="/assets/attachment.svg" alt="attachment icon" />
-                    </a>
-                    <button
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseExample"
-                      aria-expanded="false"
-                      aria-controls="collapseExample"
-                    >
-                      <img src="/assets/arrow-down-desktop.svg" alt="arrow" />
-                    </button>
-                  </div>
-                </div>
-                <div
-                  class="d-flex align-items-center d-lg-none payment-card__mobile-visible"
-                >
-                  <div class="col-1">
-                    <span class="circle circle-blue"></span>
-                  </div>
-                  <div class="col-10">
-                    <p class="payment-status-mobile">Folyamatban</p>
-                    <p class="payment-amount-mobile">12 500 Ft</p>
-                    <p>Fizetési dátum: 2019. 06. 28.</p>
-                  </div>
-                  <div class="col-1">
-                    <button
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseExample"
-                      aria-expanded="false"
-                      aria-controls="collapseExample"
-                    >
-                      <img src="/assets/arrow-down-mobile.svg" alt="arrow" />
-                    </button>
-                  </div>
-                </div>
-              </li>
               <li class="container bg-white payment-history-table__item-card">
-                <div
-                  class="row d-none d-lg-flex align-items-center payment-card__desktop-visible"
-                >
-                  <div class="col-2 d-flex align-items-center">
-                    <button class="invisible arrow-right" type="button">
-                      <img
-                        src="/assets/arrow-right.svg"
-                        alt="arrow to the right"
-                      /></button
-                    ><span>123456789</span>
-                  </div>
-                  <div class="col-2 payment-type">Átutalás</div>
-                  <div class="col-2">2019. 06. 25.</div>
-                  <div class="col-2 payment-amount-desktop">5 000 Ft</div>
-                  <div class="col-4 d-flex justify-content-between pe-5">
+                <div class="d-none d-lg-block">
+                  <div
+                    class="row d-flex align-items-center payment-card__desktop-visible"
+                  >
                     <div
-                      class="d-flex align-items-center payment-status-desktop"
+                      class="col-2 d-flex align-items-center"
+                      data-id="truncate-section"
                     >
-                      <span class="circle circle-green"></span
-                      ><span>Beérkezett</span>
+                      <button
+                        class="arrow-right"
+                        type="button"
+                        data-id="button-collapse"
+                      >
+                        <img src="/assets/arrow-right.svg" alt="nyíl" ></button
+                      ><span class="text-truncate truncatable-element"
+                        >EPAYMT812345</span
+                      >
                     </div>
-                    <a class="text-reset text-decoration-none" href="#">
-                      <img src="/assets/attachment.svg" alt="attachment icon" />
-                    </a>
-                    <button
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseExample"
-                      aria-expanded="false"
-                      aria-controls="collapseExample"
-                    >
-                      <img src="/assets/arrow-down-desktop.svg" alt="arrow" />
-                    </button>
-                  </div>
-                </div>
-                <div
-                  class="d-flex align-items-center d-lg-none payment-card__mobile-visible"
-                >
-                  <div class="col-1">
-                    <span class="circle circle-green"></span>
-                  </div>
-                  <div class="col-10">
-                    <p class="payment-status-mobile">Beérkezett</p>
-                    <p class="payment-amount-mobile">5 000 Ft</p>
-                    <p class="d-flex align-items-start">
-                      <span class="pe-2"> Fizetési dátum: 2019. 06. 26.</span>
-                      <a class="text-reset text-decoration-none" href="#">
+                    <div class="col-2 payment-type">Bankkártya</div>
+                    <div class="col-2">2019. 06. 25.</div>
+                    <div class="col-2 payment-amount-desktop">5 000 Ft</div>
+                    <div class="col-4 d-flex justify-content-between pe-5">
+                      <div
+                        class="d-flex align-items-center payment-status-desktop"
+                      >
+                        <span class="circle circle-blue"></span
+                        ><span>Folyamatban</span>
+                      </div>
+                      <a
+                        class="text-reset text-decoration-none"
+                        href="#"
+                        aria-label="csatolmány letöltése"
+                      >
                         <img
                           src="/assets/attachment.svg"
-                          alt="attachment icon"
-                        />
+                          alt="csatolmány ikon"
+                        >
                       </a>
-                    </p>
-                  </div>
-                  <div class="col-1">
-                    <button
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseExample"
-                      aria-expanded="false"
-                      aria-controls="collapseExample"
-                    >
-                      <img src="/assets/arrow-down-mobile.svg" alt="arrow" />
-                    </button>
-                  </div>
-                </div>
-              </li>
-              <li class="container bg-white payment-history-table__item-card">
-                <div
-                  class="row d-none d-lg-flex align-items-center payment-card__desktop-visible"
-                >
-                  <div class="col-2 d-flex align-items-center">
-                    <button class="arrow-right" type="button">
-                      <img
-                        src="/assets/arrow-right.svg"
-                        alt="arrow to the right"
-                      /></button
-                    ><span>EPAYMT8...</span>
-                  </div>
-                  <div class="col-2 payment-type">Bankkártya</div>
-                  <div class="col-2">2019. 06. 25.</div>
-                  <div class="col-2 payment-amount-desktop">5 000 Ft</div>
-                  <div class="col-4 d-flex justify-content-between pe-5">
-                    <div
-                      class="d-flex align-items-center payment-status-desktop"
-                    >
-                      <span class="circle circle-red"></span
-                      ><span>Sikertelen</span>
+                      <button
+                        class="arrow"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="collapse-desktop-index0"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse-desktop-index0"
+                        data-id="button-collapse"
+                      >
+                        <img src="/assets/arrow-down-desktop.svg" alt="nyíl" >
+                      </button>
                     </div>
-                    <a class="text-reset text-decoration-none" href="#">
-                      <img src="/assets/attachment.svg" alt="attachment icon" />
-                    </a>
-                    <button
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseExample"
-                      aria-expanded="false"
-                      aria-controls="collapseExample"
-                    >
-                      <img src="/assets/arrow-down-desktop.svg" alt="arrow" />
-                    </button>
                   </div>
-                </div>
-                <div
-                  class="d-flex align-items-center d-lg-none payment-card__mobile-visible"
-                >
-                  <div class="col-1">
-                    <span class="circle circle-green"></span>
-                  </div>
-                  <div class="col-10">
-                    <p class="payment-status-mobile">Beérkezett</p>
-                    <p class="payment-amount-mobile">12 500 Ft</p>
-                    <p class="d-flex align-items-start">
-                      <span class="pe-2"> Fizetési dátum: 2019. 06. 22.</span>
-                      <a class="text-reset text-decoration-none" href="#">
-                        <img
-                          src="/assets/attachment.svg"
-                          alt="attachment icon"
-                        />
-                      </a>
-                    </p>
-                  </div>
-                  <div class="col-1">
-                    <button
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseExample"
-                      aria-expanded="false"
-                      aria-controls="collapseExample"
-                    >
-                      <img src="/assets/arrow-down-mobile.svg" alt="arrow" />
-                    </button>
-                  </div>
-                </div>
-              </li> -->
 
+                  <div class="collapse px-0" id="collapse-desktop-index0">
+                    <dl
+                      class="row d-flex align-items-center my-0 payment-card__desktop-collapsible-row"
+                    >
+                      <div class="col-4 my-0 ps-3">
+                        <dt>Biztosítási időszak</dt>
+                        <dd>2019. 06. 02 - 07. 01.</dd>
+                      </div>
+                      <div class="col-2 my-0">
+                        <dt>Díjelőírás</dt>
+                        <dd>5 000 Ft</dd>
+                      </div>
+                      <div class="col-6 my-0">
+                        <dt>Könyvelt díj</dt>
+                        <dd><strong>-</strong></dd>
+                      </div>
+                    </dl>
+
+                    <div
+                      class="row bg-white d-flex align-items-center payment-card__desktop-collapsible-row"
+                    >
+                      <div class="col-6 ps-3">
+                        <p class="pb-2 my-0">Csatolmány</p>
+                        <a
+                          class="text-reset text-decoration-none d-flex align-items-center"
+                          href="#"
+                        >
+                          <img
+                            class="pe-3"
+                            src="/assets/pdf.svg"
+                            alt="dokumentum ikon"
+                          ><span>Fizetési nyugta letöltése</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-lg-none">
+                  <div
+                    class="d-flex align-items-center d-lg-none payment-card__mobile-visible"
+                  >
+                    <div class="col-1">
+                      <span class="circle circle-blue"></span>
+                    </div>
+                    <div class="col-10">
+                      <p class="payment-status-mobile">Folyamatban</p>
+                      <p class="payment-amount-mobile">12 500 Ft</p>
+                      <p class="d-flex align-items-start">
+                        <span class="pe-2">Fizetési dátum: 2019. 06. 28.</span>
+                        <a
+                          class="text-reset text-decoration-none invisible"
+                          href="#"
+                          aria-hidden="true"
+                        >
+                          <img
+                            src="/assets/attachment.svg"
+                            alt="csatolmány ikon"
+                          >
+                        </a>
+                      </p>
+                    </div>
+                    <div class="col-1">
+                      <button
+                        class="arrow"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="collapse-mobile-index0"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse-mobile-index0"
+                        data-id="button-collapse"
+                      >
+                        <img src="/assets/arrow-down-mobile.svg" alt="nyíl" >
+                      </button>
+                    </div>
+                  </div>
+                  <div class="collapse px-0" id="collapse-mobile-index0">
+                    <dl
+                      class="payment-card__mobile-collapsible-transaction-data mobile-collapsible-row-style"
+                    >
+                      <dt>Státusz</dt>
+                      <dd>Folyamatban</dd>
+                      <dt>Azonosító</dt>
+                      <dd>12345678</dd>
+                      <dt>Hogyan</dt>
+                      <dd class="mb-0">Bankkártya</dd>
+                    </dl>
+                    <div
+                      class="row align-items-center mobile-collapsible-row-style"
+                    >
+                      <p class="col-12 pb-2 my-0">Csatolmány</p>
+                      <div class="col-11">
+                        <div class="d-flex align-items-center">
+                          <img
+                            class="pe-3"
+                            src="/assets/pdf.svg"
+                            alt="dokumentum ikon"
+                          ><span>Fizetési nyugta letöltése</span>
+                        </div>
+                      </div>
+                      <a
+                        class="col-1 text-reset text-decoration-none d-flex align-items-center"
+                        href="#"
+                        aria-label="fizetési nyugta letöltése"
+                      >
+                        <img src="/assets/download.svg" alt="letöltés ikon" >
+                      </a>
+                    </div>
+                    <ul class="list-unstyled px-0 accounted-data__list">
+                      <li class="mobile-collapsible-row-style">
+                        <dl class="row">
+                          <div class="col-12">
+                            <dt>Időszak</dt>
+                            <dd class="mb-4">2019. 11. 20- 2020. 11. 19</dd>
+                          </div>
+                          <div class="col-8">
+                            <dt>Díjelőírás</dt>
+                            <dd>5 000 Ft</dd>
+                          </div>
+                          <div class="col-4">
+                            <dt>Könyvelt díj</dt>
+                            <dd><strong>-</strong></dd>
+                          </div>
+                        </dl>
+                      </li>
+                      <li class="mobile-collapsible-row-style">
+                        <dl class="row">
+                          <div class="col-12">
+                            <dt>Időszak</dt>
+                            <dd class="mb-4">2019. 11. 20- 2020. 11. 19</dd>
+                          </div>
+                          <div class="col-8">
+                            <dt>Díjelőírás</dt>
+                            <dd>7 500 Ft</dd>
+                          </div>
+                          <div class="col-4">
+                            <dt>Könyvelt díj</dt>
+                            <dd><strong>-</strong></dd>
+                          </div>
+                        </dl>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
               <li class="container bg-white payment-history-table__item-card">
                 <div class="d-none d-lg-block">
                   <div
@@ -320,14 +323,16 @@
                         data-id="button-collapse"
                       >
                         <img
+                          class="invisible"
                           src="/assets/arrow-right.svg"
-                          alt="arrow to the right"
-                        /></button
-                      ><span class="text-truncate" style="width: 87px"
-                        >EPAYMT812345</span
+                          alt="nyíl"
+                          aria-hidden="true"
+                        ></button
+                      ><span class="text-truncate truncatable-element"
+                        >12345678</span
                       >
                     </div>
-                    <div class="col-2 payment-type">Bankkártya</div>
+                    <div class="col-2 payment-type">Átutalás</div>
                     <div class="col-2">2019. 06. 25.</div>
                     <div class="col-2 payment-amount-desktop">5 000 Ft</div>
                     <div class="col-4 d-flex justify-content-between pe-5">
@@ -337,25 +342,31 @@
                         <span class="circle circle-green"></span
                         ><span>Beérkezett</span>
                       </div>
-                      <a class="text-reset text-decoration-none" href="#">
+                      <a
+                        class="text-reset text-decoration-none invisible"
+                        href="#"
+                        aria-hidden="true"
+                      >
                         <img
                           src="/assets/attachment.svg"
-                          alt="attachment icon"
-                        />
+                          alt="csatolmány ikon"
+                        >
                       </a>
                       <button
                         class="arrow"
                         type="button"
                         aria-expanded="false"
+                        aria-controls="collapse-desktop-index1"
                         data-bs-toggle="collapse"
-                        data-bs-target="#collapseDesktop"
+                        data-bs-target="#collapse-desktop-index1"
                         data-id="button-collapse"
                       >
-                        <img src="/assets/arrow-down-desktop.svg" alt="arrow" />
+                        <img src="/assets/arrow-down-desktop.svg" alt="nyíl" >
                       </button>
                     </div>
                   </div>
-                  <div class="collapse px-0" id="collapseDesktop">
+
+                  <div class="collapse px-0" id="collapse-desktop-index1">
                     <dl
                       class="row d-flex align-items-center my-0 payment-card__desktop-collapsible-row"
                     >
@@ -385,8 +396,189 @@
                           <img
                             class="pe-3"
                             src="/assets/pdf.svg"
-                            alt="pdf icon"
-                          /><span>Fizetési nyugta letöltése</span>
+                            alt="dokumentum ikon"
+                          ><span>Fizetési nyugta letöltése</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-lg-none">
+                  <div
+                    class="d-flex align-items-center d-lg-none payment-card__mobile-visible"
+                  >
+                    <div class="col-1">
+                      <span class="circle circle-green"></span>
+                    </div>
+                    <div class="col-10">
+                      <p class="payment-status-mobile">Beérkezett</p>
+                      <p class="payment-amount-mobile">5 000 Ft</p>
+                      <p class="d-flex align-items-start">
+                        <span class="pe-2">Fizetési dátum: 2019. 06. 26.</span>
+                        <a
+                          class="text-reset text-decoration-none"
+                          href="#"
+                          aria-label="csatolmány letöltése"
+                        >
+                          <img
+                            src="/assets/attachment.svg"
+                            alt="csatolmány ikon"
+                          >
+                        </a>
+                      </p>
+                    </div>
+                    <div class="col-1">
+                      <button
+                        class="arrow"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="collapse-mobile-index1"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse-mobile-index1"
+                        data-id="button-collapse"
+                      >
+                        <img src="/assets/arrow-down-mobile.svg" alt="nyíl" >
+                      </button>
+                    </div>
+                  </div>
+                  <div class="collapse px-0" id="collapse-mobile-index1">
+                    <dl
+                      class="payment-card__mobile-collapsible-transaction-data mobile-collapsible-row-style"
+                    >
+                      <dt>Státusz</dt>
+                      <dd>Folyamatban</dd>
+                      <dt>Azonosító</dt>
+                      <dd>12345678</dd>
+                      <dt>Hogyan</dt>
+                      <dd class="mb-0">Bankkártya</dd>
+                    </dl>
+                    <div
+                      class="row align-items-center mobile-collapsible-row-style"
+                    >
+                      <p class="col-12 pb-2 my-0">Csatolmány</p>
+                      <div class="col-11">
+                        <div class="d-flex align-items-center">
+                          <img
+                            class="pe-3"
+                            src="/assets/pdf.svg"
+                            alt="dokumentum ikon"
+                          ><span>Fizetési nyugta letöltése</span>
+                        </div>
+                      </div>
+                      <a
+                        class="col-1 text-reset text-decoration-none d-flex align-items-center"
+                        href="#"
+                        aria-label="fizetési nyugta letöltése"
+                      >
+                        <img src="/assets/download.svg" alt="letöltés ikon" >
+                      </a>
+                    </div>
+                    <ul class="list-unstyled px-0 accounted-data__list">
+                      <li class="mobile-collapsible-row-style">
+                        <dl class="row">
+                          <div class="col-12">
+                            <dt>Időszak</dt>
+                            <dd class="mb-4">2019. 11. 20- 2020. 11. 19</dd>
+                          </div>
+                          <div class="col-8">
+                            <dt>Díjelőírás</dt>
+                            <dd>5 000 Ft</dd>
+                          </div>
+                          <div class="col-4">
+                            <dt>Könyvelt díj</dt>
+                            <dd><strong>5 000 Ft</strong></dd>
+                          </div>
+                        </dl>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="container bg-white payment-history-table__item-card">
+                <div class="d-none d-lg-block">
+                  <div
+                    class="row d-flex align-items-center payment-card__desktop-visible"
+                  >
+                    <div
+                      class="col-2 d-flex align-items-center"
+                      data-id="truncate-section"
+                    >
+                      <button
+                        class="arrow-right"
+                        type="button"
+                        data-id="button-collapse"
+                      >
+                        <img src="/assets/arrow-right.svg" alt="nyíl" ></button
+                      ><span class="text-truncate truncatable-element"
+                        >EPAYMT812345</span
+                      >
+                    </div>
+                    <div class="col-2 payment-type">Bankkártya</div>
+                    <div class="col-2">2019. 06. 25.</div>
+                    <div class="col-2 payment-amount-desktop">5 000 Ft</div>
+                    <div class="col-4 d-flex justify-content-between pe-5">
+                      <div
+                        class="d-flex align-items-center payment-status-desktop"
+                      >
+                        <span class="circle circle-red"></span
+                        ><span>Sikertelen</span>
+                      </div>
+                      <a
+                        class="text-reset text-decoration-none"
+                        href="#"
+                        aria-label="csatolmány letöltése"
+                      >
+                        <img
+                          src="/assets/attachment.svg"
+                          alt="csatolmány ikon"
+                        >
+                      </a>
+                      <button
+                        class="arrow"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="collapse-desktop-index2"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse-desktop-index2"
+                        data-id="button-collapse"
+                      >
+                        <img src="/assets/arrow-down-desktop.svg" alt="nyíl" >
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="collapse px-0" id="collapse-desktop-index2">
+                    <dl
+                      class="row d-flex align-items-center my-0 payment-card__desktop-collapsible-row"
+                    >
+                      <div class="col-4 my-0 ps-3">
+                        <dt>Biztosítási időszak</dt>
+                        <dd>2019. 06. 02 - 07. 01.</dd>
+                      </div>
+                      <div class="col-2 my-0">
+                        <dt>Díjelőírás</dt>
+                        <dd>5 000 Ft</dd>
+                      </div>
+                      <div class="col-6 my-0">
+                        <dt>Könyvelt díj</dt>
+                        <dd><strong>-</strong></dd>
+                      </div>
+                    </dl>
+
+                    <div
+                      class="row bg-white d-flex align-items-center payment-card__desktop-collapsible-row"
+                    >
+                      <div class="col-6 ps-3">
+                        <p class="pb-2 my-0">Csatolmány</p>
+                        <a
+                          class="text-reset text-decoration-none d-flex align-items-center"
+                          href="#"
+                        >
+                          <img
+                            class="pe-3"
+                            src="/assets/pdf.svg"
+                            alt="dokumentum ikon"
+                          ><span>Fizetési nyugta letöltése</span>
                         </a>
                       </div>
                     </div>
@@ -404,28 +596,33 @@
                       <p class="payment-amount-mobile">12 500 Ft</p>
                       <p class="d-flex align-items-start">
                         <span class="pe-2">Fizetési dátum: 2019. 06. 22.</span>
-                        <a class="text-reset text-decoration-none" href="#">
+                        <a
+                          class="text-reset text-decoration-none"
+                          href="#"
+                          aria-label="csatolmány letöltése"
+                        >
                           <img
                             src="/assets/attachment.svg"
-                            alt="attachment icon"
-                          />
+                            alt="csatolmány ikon"
+                          >
                         </a>
                       </p>
                     </div>
                     <div class="col-1">
                       <button
-                        class="arrow"
+                        class="arrow rotate-180"
                         type="button"
-                        aria-expanded="false"
+                        aria-expanded="true"
+                        aria-controls="collapse-mobile-index2"
                         data-bs-toggle="collapse"
-                        data-bs-target="#collapseMobile"
+                        data-bs-target="#collapse-mobile-index2"
                         data-id="button-collapse"
                       >
-                        <img src="/assets/arrow-down-mobile.svg" alt="arrow" />
+                        <img src="/assets/arrow-down-mobile.svg" alt="nyíl" >
                       </button>
                     </div>
                   </div>
-                  <div class="collapse px-0" id="collapseMobile">
+                  <div class="collapse show px-0" id="collapse-mobile-index2">
                     <dl
                       class="payment-card__mobile-collapsible-transaction-data mobile-collapsible-row-style"
                     >
@@ -441,19 +638,20 @@
                     >
                       <p class="col-12 pb-2 my-0">Csatolmány</p>
                       <div class="col-11">
-                        <a
-                          class="text-reset text-decoration-none d-flex align-items-center"
-                          href="#"
-                        >
+                        <div class="d-flex align-items-center">
                           <img
                             class="pe-3"
                             src="/assets/pdf.svg"
-                            alt="pdf icon"
-                          /><span>Fizetési nyugta letöltése</span>
-                        </a>
+                            alt="dokumentum ikon"
+                          ><span>Fizetési nyugta letöltése</span>
+                        </div>
                       </div>
-                      <a class="col-1 text-reset text-decoration-none" href="#">
-                        <img src="/assets/download.svg" alt="download logo" />
+                      <a
+                        class="col-1 text-reset text-decoration-none d-flex align-items-center"
+                        href="#"
+                        aria-label="fizetési nyugta letöltése"
+                      >
+                        <img src="/assets/download.svg" alt="letöltés ikon" >
                       </a>
                     </div>
                     <ul class="list-unstyled px-0 accounted-data__list">
@@ -486,6 +684,187 @@
                           <div class="col-4">
                             <dt>Könyvelt díj</dt>
                             <dd><strong>7 500 Ft</strong></dd>
+                          </div>
+                        </dl>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="container bg-white payment-history-table__item-card">
+                <div class="d-none d-lg-block">
+                  <div
+                    class="row d-flex align-items-center payment-card__desktop-visible"
+                  >
+                    <div
+                      class="col-2 d-flex align-items-center"
+                      data-id="truncate-section"
+                    >
+                      <button
+                        class="arrow-right"
+                        type="button"
+                        data-id="button-collapse"
+                      >
+                        <img src="/assets/arrow-right.svg" alt="nyíl" ></button
+                      ><span class="text-truncate truncatable-element"
+                        >EPAYMT812345</span
+                      >
+                    </div>
+                    <div class="col-2 payment-type">Bankkártya</div>
+                    <div class="col-2">2019. 06. 25.</div>
+                    <div class="col-2 payment-amount-desktop">5 000 Ft</div>
+                    <div class="col-4 d-flex justify-content-between pe-5">
+                      <div
+                        class="d-flex align-items-center payment-status-desktop"
+                      >
+                        <span class="circle circle-green"></span
+                        ><span>Beérkezett</span>
+                      </div>
+                      <a
+                        class="text-reset text-decoration-none"
+                        href="#"
+                        aria-label="csatolmány letöltése"
+                      >
+                        <img
+                          src="/assets/attachment.svg"
+                          alt="csatolmány ikon"
+                        >
+                      </a>
+                      <button
+                        class="arrow rotate-180"
+                        type="button"
+                        aria-expanded="true"
+                        aria-controls="collapse-desktop-index3"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse-desktop-index3"
+                        data-id="button-collapse"
+                      >
+                        <img src="/assets/arrow-down-desktop.svg" alt="nyíl" >
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="collapse show px-0" id="collapse-desktop-index3">
+                    <dl
+                      class="row d-flex align-items-center my-0 payment-card__desktop-collapsible-row"
+                    >
+                      <div class="col-4 my-0 ps-3">
+                        <dt>Biztosítási időszak</dt>
+                        <dd>2019. 06. 02 - 07. 01.</dd>
+                      </div>
+                      <div class="col-2 my-0">
+                        <dt>Díjelőírás</dt>
+                        <dd>5 000 Ft</dd>
+                      </div>
+                      <div class="col-6 my-0">
+                        <dt>Könyvelt díj</dt>
+                        <dd><strong>5 000 Ft</strong></dd>
+                      </div>
+                    </dl>
+
+                    <div
+                      class="row bg-white d-flex align-items-center payment-card__desktop-collapsible-row"
+                    >
+                      <div class="col-6 ps-3">
+                        <p class="pb-2 my-0">Csatolmány</p>
+                        <a
+                          class="text-reset text-decoration-none d-flex align-items-center"
+                          href="#"
+                        >
+                          <img
+                            class="pe-3"
+                            src="/assets/pdf.svg"
+                            alt="dokumentum ikon"
+                          ><span>Fizetési nyugta letöltése</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-lg-none">
+                  <div
+                    class="d-flex align-items-center d-lg-none payment-card__mobile-visible"
+                  >
+                    <div class="col-1">
+                      <span class="circle circle-green"></span>
+                    </div>
+                    <div class="col-10">
+                      <p class="payment-status-mobile">Beérkezett</p>
+                      <p class="payment-amount-mobile">5 000 Ft</p>
+                      <p class="d-flex align-items-start">
+                        <span class="pe-2">Fizetési dátum: 2019. 06. 26.</span>
+                        <a
+                          class="text-reset text-decoration-none invisible"
+                          href="#"
+                          aria-hidden="true"
+                        >
+                          <img
+                            src="/assets/attachment.svg"
+                            alt="csatolmány ikon"
+                          >
+                        </a>
+                      </p>
+                    </div>
+                    <div class="col-1">
+                      <button
+                        class="arrow"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="collapse-mobile-index3"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse-mobile-index3"
+                        data-id="button-collapse"
+                      >
+                        <img src="/assets/arrow-down-mobile.svg" alt="nyíl" >
+                      </button>
+                    </div>
+                  </div>
+                  <div class="collapse px-0" id="collapse-mobile-index3">
+                    <dl
+                      class="payment-card__mobile-collapsible-transaction-data mobile-collapsible-row-style"
+                    >
+                      <dt>Státusz</dt>
+                      <dd>Beérkezett</dd>
+                      <dt>Azonosító</dt>
+                      <dd>12345678</dd>
+                      <dt>Hogyan</dt>
+                      <dd class="mb-0">Átutalás</dd>
+                    </dl>
+                    <div
+                      class="row align-items-center mobile-collapsible-row-style"
+                    >
+                      <p class="col-12 pb-2 my-0">Csatolmány</p>
+                      <div class="col-11">
+                        <div class="d-flex align-items-center">
+                          <img
+                            class="pe-3"
+                            src="/assets/pdf.svg"
+                            alt="dokumentum ikon"
+                          ><span>Fizetési nyugta letöltése</span>
+                        </div>
+                      </div>
+                      <a
+                        class="col-1 text-reset text-decoration-none d-flex align-items-center"
+                        href="#"
+                        aria-label="fizetési nyugta letöltése"
+                      >
+                        <img src="/assets/download.svg" alt="letöltés ikon" >
+                      </a>
+                    </div>
+                    <ul class="list-unstyled px-0 accounted-data__list">
+                      <li class="mobile-collapsible-row-style">
+                        <dl class="row">
+                          <div class="col-12">
+                            <dt>Időszak</dt>
+                            <dd class="mb-4">2019. 11. 20- 2020. 11. 19</dd>
+                          </div>
+                          <div class="col-8">
+                            <dt>Díjelőírás</dt>
+                            <dd>5 000 Ft</dd>
+                          </div>
+                          <div class="col-4">
+                            <dt>Könyvelt díj</dt>
+                            <dd><strong>5 000 Ft</strong></dd>
                           </div>
                         </dl>
                       </li>

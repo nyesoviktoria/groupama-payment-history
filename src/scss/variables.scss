@@ -1,4 +1,5 @@
 $blue-dark: #283168;
+$blue-darkest: #0a113d;
 $blue-light: #a1caff;
 $green: #01bba1;
 $grey-dark: #3d424c;
@@ -18,77 +19,57 @@ $border-line-strong: 3px solid $grey-light;
 $box-shadow-light: 0px 2px 12px 0px #0a113d1a;
 $box-shadow-dark: 0px 4px 8px 0px #0000001a;
 
-@mixin fs16 {
+@mixin fs-16 {
   color: $grey-dark;
   font-size: 16px;
   font-weight: 600;
 }
 
-@mixin fs16-wide {
-  @include fs16;
+@mixin fs-16-wide {
+  @include fs-16;
   letter-spacing: 0.75px;
 }
 
-@mixin fs15 {
-  font-size: 15px;
-  letter-spacing: 0.75px;
-}
-
-@mixin fs15-blue {
-  @include fs15;
+@mixin fs-15-blue {
   color: $blue-dark;
+  font-size: 15px;
   font-weight: 600;
+  letter-spacing: 0.75px;
 }
 
-@mixin fs15-grey {
-  @include fs15;
-  color: $grey-dark;
-  font-weight: 400;
-}
-
-@mixin fs14-fw400 {
+@mixin fs-14-fw-400 {
   font-size: 14px;
   font-weight: 400;
 }
 
-@mixin fs14-fw400-tight {
-  @include fs14-fw400;
-  letter-spacing: 0.5px;
-}
-
-@mixin fs14-fw400-wide {
-  @include fs14-fw400;
+@mixin fs-14-fw-400-wide {
+  @include fs-14-fw-400;
   letter-spacing: 0.75px;
 }
 
-@mixin fs14-fw400-tight-grey {
-  @include fs14-fw400-tight;
+@mixin fs-14-fw-400-tight {
+  @include fs-14-fw-400;
+  letter-spacing: 0.5px;
+}
+
+@mixin fs-14-fw-400-tight-grey {
+  @include fs-14-fw-400-tight;
   color: $grey-medium;
 }
 
-@mixin fs14-fw400-tight-blue {
-  @include fs14-fw400-tight;
+@mixin fs-14-fw-400-tight-dark-blue {
+  @include fs-14-fw-400-tight;
+  color: $blue-darkest;
+}
+
+@mixin fs-14-fw-400-wide-blue {
+  @include fs-14-fw-400-wide;
   color: $blue-dark;
 }
 
-@mixin fs14-fw400-wide-grey {
-  @include fs14-fw400-wide;
-  color: $grey-dark;
-}
-
-@mixin fs14-fw400-wide-blue {
-  @include fs14-fw400-wide;
-  color: $blue-dark;
-}
-
-@mixin fs12 {
+@mixin fs-12 {
   font-size: 12px;
   font-weight: 400;
-}
-
-@mixin fs12-tight {
-  @include fs12;
-  letter-spacing: 0.5px;
 }
 
 @mixin desktop {
