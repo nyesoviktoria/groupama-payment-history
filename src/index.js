@@ -3,7 +3,7 @@ import "./scss/main.scss";
 import "./scss/variables.scss";
 
 const buttonCollapseElement = document.querySelectorAll(
-  'button[data-id="button-collapse"]'
+  'button[data-id="arrow-to-rotate"]'
 );
 
 buttonCollapseElement.forEach((button) =>
